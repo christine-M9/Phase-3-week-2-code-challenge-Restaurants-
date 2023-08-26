@@ -1,8 +1,10 @@
 #customer initialised with given name and family name
 class Customer:
+    
     def __init__(self, name, family_name):
         self.name = name
         self.family_name_given = family_name
+        
 #returns given name
     def given_name(self):
         return self.name
@@ -17,7 +19,8 @@ class Customer:
         self.family_name_given = new_family_name
 #customer's fullname        
     def full_name(self):
-        return f"{self.name} {self.family_name_given}"   
+        return f"{self.name} {self.family_name_given}"  
+        
 
 customer1 = Customer("George", "Washington")
 print(customer1.given_name())
@@ -29,3 +32,4 @@ print(customer1.given_name())
 customer1.change_family_name("Juma")
 print(customer1.family_name()) 
 print(customer1.full_name())
+
