@@ -6,16 +6,18 @@ class Review:
         self.customer = customer
         self.restaurant = restaurant
         self.rating = rating
+#returns rating number       
+    def rating(self):
+        return self.rating_number
 
-
-# Creating customer and restaurant
+#Creating customer and restaurant
 customer1 = Customer("Mathews", "Juma")
 restaurant1 = Restaurant("Hilton Hotel")
 
-# Creating a review 
+#Creating a review 
 review1 = Review(customer1, restaurant1, 8)
 
-# Accessing the review's attributes
+#Accessing the review's attributes
 print("Customer:", review1.customer.given_name())
 print("Restaurant:", review1.restaurant.name())
 print("Rating:", review1.rating)
